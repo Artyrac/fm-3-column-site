@@ -2,22 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 body{
     font-size: 1rem;
-}
-main{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     flex-direction: column;
     line-height: 1.5em;
+    background-color: rgb(241, 232, 225);
 }
+/* Changed contect centering from main to body section*/
+
 #block1{
     background-color: orange;
     background-color: hsl(31, 77%, 52%);
     max-height: 100vh;
+    min-height: 40vh;
     padding: 4em;
-    max-width: 340px;
+    max-width: 300px;
     border-radius: 0.5em 0.5em 0 0;
 }
 #block2{
@@ -25,17 +27,17 @@ main{
     background-color: hsl(184, 100%, 22%);
     max-height: 100vh;
     padding: 4em;
-    max-width: 340px;
+    max-width: 300px;
 }
 #block3{
     background-color: darkcyan;
     background-color: hsl(179, 100%, 13%);
     max-height: 100vh;
     padding: 4em;
-    max-width: 340px;
+    max-width: 300px;
     border-radius: 0 0 0.5em 0.5em;
 }
-h1{
+h2{
     color: lightgray;
     color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
@@ -48,6 +50,13 @@ button{
     border: 1px solid transparent;
     width: 40%;
     height: 3em;
+}
+/* Added hover effect for button */
+button:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    width: 60%;
+    transition: 1s;
 }
 p{
     font-family: 'Lexend Deca', sans-serif;
@@ -70,6 +79,7 @@ p{
 
 @media screen and (min-width: 1080px){
     main{
+        display: flex;
         flex-direction: row;
     }
     #block1{
